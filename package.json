@@ -1,0 +1,34 @@
+{
+  "name": "ahj-anim",
+  "version": "1.0.0",
+  "description": "js animation",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack serve --config webpack.dev.js"
+  },
+  "repository": "https://github.com/Aleks-72/ahj-anim",
+  "author": "Aleksandr Kalinin",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^8.0.5",
+    "@babel/core": "^8.0.5",
+    "@babel/preset-env": "^8.0.5",
+    "@eslint/js": "^10.0.1",
+    "babel-loader": "^10.1.1",
+    "core-js": "^3.50.0",
+    "cors": "^2.8.6",
+    "css-loader": "^7.1.5",
+    "css-minimizer-webpack-plugin": "^8.0.0",
+    "eslint": "^10.10.0",
+    "globals": "^17.12.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.8",
+    "mini-css-extract-plugin": "^2.10.2",
+    "webpack": "^5.111.0",
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^6.0.0",
+    "webpack-merge": "^6.0.1"
+  }
+}

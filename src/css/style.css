@@ -1,0 +1,58 @@
+.collapsible {
+  width: 500px;
+  max-width: 100%;
+  margin: 12px auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.collapsible__button {
+  width: 100%;
+  padding: 12px 16px;
+  border: 0;
+  background: #f5f5f5;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.collapsible__content {
+  overflow: hidden;
+}
+
+.collapsible__content[hidden] {
+  display: none;
+}
+
+.collapsible__inner {
+  padding: 16px;
+}
+
+.collapsible__content.is-opening {
+  animation: collapse-open 300ms ease both;
+}
+
+.collapsible__content.is-closing {
+  animation: collapse-close 300ms ease both;
+}
+
+@keyframes collapse-open {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: var(--collapsible-height);
+  }
+}
+
+@keyframes collapse-close {
+  from {
+    height: var(--collapsible-height);
+  }
+
+  to {
+    height: 0;
+  }
+}
